@@ -22,7 +22,7 @@ int main()
     
     int array[r][c];
 
-    int sum[4][4]; 
+    int sum[r][c]; 
     //input 1
     cout<<"enter elements of array: "<<endl;
 
@@ -59,23 +59,14 @@ int main()
     }
     //output 2
     cout<<"addition of diagonal elements is: "<<add<<endl;
-    for(i=0;i<r;i++)
+    for( i = 0; i < r; i++)
     {
-        for(j=0;j<c;j++)
-        {
-            if(i==j)
-            {
-                if(i+j==r-1)
-                {
-                    radd+=array[i][j];
-                }
-            }
-        }
+        radd += array[i][r - i - 1];
     }
-    cout<<"reverse diagonal addition is: "<<radd;
+    cout<<"addition of reverse diagonal: "<<radd-2;
+    return 0;
 }
-/*
-OUTPUT
+/* OUTPUT
 enter number of columns: 2
 enter number of rows: 2
 diagonal addition possible
@@ -85,9 +76,4 @@ displaying the array
 1	2	
 3	4	
 addition of diagonal elements is: 5
-reverse diagonal addition is: 2
-*/
-    
-    
-    
-    
+addition of reverse diagonal: 5
