@@ -37,21 +37,20 @@ The above statement will take the 10th element from the array named arr and assi
 # OUTCOME OF THE CODE
 We try to use array to do some simple tasks like;
 1. Print full array
-2. Find the biggest and the smallest number
-3. Reverse an array
-4. Search for numbers in the array
-5. Sum of all numbers of an array
+2. Addition of two arrays
+3. transpose
+4. sum of diagonal terms
+5. array multiplicsstion
 
 # EXPLANATION
 1. To print the full array
 We use a for loop to print all the elements of the array
-2. To print the biggest and the smallest value
-We again use a for loop that runs N times (N=number of elemensts) and use an if statement to find the biggest or smallewst number.
-3. To reverse an array
-We use another for loop and find the peak vales by comparing an the values of an array with an index before and after the value.
-4. To search for numbers
-We use another for loop and compare values until we find the required value, if not we print that the vales are not found.
-5. To find sum of all numbers
-We use for loop and as we move from element to another inside the loop, we add the numbers simultaneously amd print the sum after we reach the last element.
+2. To find sum of sum of two arrays we will take user defined two inputs and put for loop and add the arrays and store the output in third array
+3. To transpose an array
+We use another for loop and interchange the rows of the array and store the output in third array.
+4. To sum diagonal term
+The loop iterates through the matrix. For each row i, the corresponding reverse diagonal element is found at matrix[i][n - i - 1]. These elements are summed up.
+5. To find producy of two arrays
+It multiplies corresponding elements from array1 and array2 and stores the results in the product array
 
 
