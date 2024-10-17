@@ -42,7 +42,7 @@ We try to use array to do some simple tasks like;
 4. sum of diagonal terms
 5. array multiplicsstion
 
-# EXPLANATION
+# ALGORITHM
 1. To print the full array
 We use a for loop to print all the elements of the array
 2. To find sum of sum of two arrays we will take user defined two inputs and put for loop and add the arrays and store the output in third array
